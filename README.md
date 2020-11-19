@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Launchdarkly Feature Flag POC using React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Using Launchdarkly for Fetaure Flag (https://launchdarkly.com/features/feature-flags/)
+
+Presentation URL https://docs.google.com/presentation/d/1l7O9_UB9DlxWjuS6IdICt86NFFTWjFnCesk_Z-cgeHY/edit?usp=sharing
 
 ## Available Scripts
 
