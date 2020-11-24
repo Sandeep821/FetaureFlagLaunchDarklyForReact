@@ -13,7 +13,7 @@ class App extends Component {
         { name: 'TIGUAN', msrp: '55000' },
         { name: 'GOLF', msrp: '52000' },
         { name: 'JETTA', msrp: '42000' },
-        { name: 'BEETLE', msrp: '320000' },
+        { name: 'BEETLE', msrp: '320000' }
       ]
     }
   }
@@ -39,14 +39,20 @@ class App extends Component {
     }
 
     return (
-      <div className="App" style={{height:'1000px', backgroundColor: this.state.featureFlags.newBrand01Theme ? 'grey' : 'white'}}>
-        <div style={{marginTop:'50px'}}><h1>Launchdarkly feature flag POC 01</h1></div>
+      <div className="App" style={{height:'1000px', marginTop: '-50px', backgroundColor: this.state.featureFlags.newBrand01Theme ? '#6aa2fc' : 'grey'}}>
+        <div style={{paddingTop:'100px'}}><h1>Launchdarkly feature flag POC 01</h1></div>
         <div><h2>BRAND_01 SITE</h2></div>
-        <ul style={{marginTop:'100px'}}>
+       <div>
+       <ul style={{marginTop:'100px'}}>
           {this.state.vehicle.map((car, index) =>
-             <div key={index} style={{padding:'50px', display:'inline', margin:'10px', backgroundColor: this.state.featureFlags.newBrand01Theme ? 'white' : '#b7b5b5'}}><strong>{car.name}</strong></div>
+             <div key={index} style={{padding:'50px', display:'inline', margin:'10px', backgroundColor: this.state.featureFlags.newBrand01Theme ? '#d1e3ff' : 'white'}}><strong>{car.name}</strong></div>
           )}
         </ul>
+        <b/>
+       </div>
+
+        <hr style={{marginTop: '300px', borderColor: this.state.featureFlags.newBrand01Theme ? '#d1e3ff' : 'white'}}/>
+        <div style={{marginTop: '30px', color: this.state.featureFlags.newBrand01Theme ? '#d1e3ff' : 'white'}}>© 2020 | Privacy Policy |Do Not Sell My Personal Information</div>
       </div>
     );
   }
